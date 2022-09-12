@@ -1,0 +1,35 @@
+.search {
+  text-align: center;
+}
+
+form>.textbox {
+  outline: 0;
+  height: 42px;
+  width: 244px;
+  line-height: 42px;
+  padding: 0 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #212121;
+  border: 0;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px;
+}
+
+form>.textbox:focus {
+  outline: 0;
+  background-color: #FFF;
+}
+
+.card {
+  margin-top: 5%;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+
+.text-div {
+  padding-left: 5%;
+  text-align: left;
+  text-transform: capitalize;
+}

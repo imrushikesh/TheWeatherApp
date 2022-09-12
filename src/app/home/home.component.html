@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="col-md-12 col-sm-12">
+        <div class="search">
+            <form #form="ngForm" (submit)="onSubmit()">
+                <input type="text" class="textbox" placeholder="Search City" name="cityName" [(ngModel)]="cityName">
+            </form>
+        </div>
+        <div class="card text-white mb-3">
+            <div class="card-body" style="width: 400px;">
+                <div class="text-div">
+                    <h3 class="card-title text-center">{{weatherData.location.name}}</h3>
+                    <div class="location-info">
+                        region - {{weatherData.location.region}} <br>
+                        country- {{weatherData.location.country}}<br>
+                        timezone: {{weatherData.location.tz_id}}<br>
+                        localtime - {{weatherData.location.localtime}}<br>
+                    </div>
+                    <div class="weather-info">
+                        temp_c:{{weatherData.current.temp_c}}<br>
+                        temp_f: {{weatherData.current.temp_f}}<br>
+                        humidity:{{weatherData.current.humidity}}<br>
+                        cloud:{{weatherData.current.cloud}}<br>
+                        wind_mph:{{weatherData.current.wind_mph}}<br>
+                        wind_kph:{{weatherData.current.wind_kph}}<br>
+                        wind_degree:{{weatherData.current.wind_degree}}<br>
+                        wind_dir:{{weatherData.current.wind_dir}}<br>
+                        <p class="card-text"> last_updated - {{weatherData.current.last_updated}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
